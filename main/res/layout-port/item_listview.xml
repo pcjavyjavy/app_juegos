@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_nombre_juego"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juego"
+            android:textColor="#ea040b"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_nombre_expansion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expansion"
+            android:textColor="#f105d1"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_titular_tiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiempo: "
+                android:textColor="#0b0b0b"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_tiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#46a2f2"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_tiempo_minutos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" minutos"
+                android:textColor="#333333"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_titular_minjugadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jugadores: de "
+                android:textColor="#0b0b0b"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_minjugadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="#46a2f2"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_titular_maxjugadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" a "
+                android:textColor="#0b0b0b"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_maxjugadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="#46a2f2"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_titular_optimojugadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Optimo: "
+                android:textColor="#0b0b0b"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_optimojugadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="#46a2f2"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_titular_reglas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reglas: "
+                android:textColor="#0b0b0b"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_reglas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http://www.google.es"
+                android:linksClickable="true"
+                android:autoLink="web"
+                android:textColor="#46a2f2"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_titular_faqs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAQs: "
+                android:textColor="#0b0b0b"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_faqs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http://www.google.es"
+                android:linksClickable="true"
+                android:autoLink="web"
+                android:textColor="#46a2f2"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_titular_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion: "
+                android:textColor="#0b0b0b"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esto es noseque"
+                android:textColor="#666666"
+                android:textSize="18dp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

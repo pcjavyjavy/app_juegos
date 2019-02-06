@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorfondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.javy.pruebas_sqlite.SeleccionActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutpagina"
+        android:background="@color/colorlayoutprincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:id="@+id/layoutjugadores"
+            android:background="@color/colorlayoutsecundaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/titulojugadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtnumjug" />
+
+            <Space
+                android:id="@+id/espacio1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spinnerjugadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+
+            <Space
+                android:id="@+id/espacio2"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:id="@+id/radiogroupjugadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radiojugadoresoptimos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/radjugoptimo" />
+
+                <RadioButton
+                    android:id="@+id/radiojugadoresnooptimos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/radjugnooptimo" />
+
+                <RadioButton
+                    android:id="@+id/radiojugadorescualquiera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/radjugcualq" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layouttiempo"
+            android:background="@color/colorlayoutsecundariab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/titulotiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtnumtiempo" />
+
+            <Space
+                android:id="@+id/espacio3"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spinnertiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+
+            <Space
+                android:id="@+id/espacio4"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:id="@+id/radiogrouptiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radiotiempomaximo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/radtiempmax" />
+
+                <RadioButton
+                    android:id="@+id/radiotiempominimo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/radtiempmin" />
+
+                <RadioButton
+                    android:id="@+id/radiotiemopexacto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/radtiempexaco" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layouttipos"
+            android:background="@color/colorlayoutsecundaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layouttipo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/titulotipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txttipojuego" />
+
+                <Space
+                    android:id="@+id/espacio5"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <RadioGroup
+                    android:id="@+id/radiogrouptipos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radiotipotodos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/radtipotodos" />
+
+                    <RadioButton
+                        android:id="@+id/radiotipoalguno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/radtipoalguno" />
+
+                    <RadioButton
+                        android:id="@+id/radiotiponinguno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/radtiponinguno" />
+                </RadioGroup>
+            </LinearLayout>
+            <Space
+                android:id="@+id/espacio1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:id="@+id/layouttipo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/checkboxa1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/checkbox"
+                    android:text="@string/checka1" />
+                <Space
+                    android:id="@+id/espacio10"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+                <CheckBox
+                    android:id="@+id/checkboxa2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/checkbox"
+                    android:text="@string/checka2" />
+                <Space
+                    android:id="@+id/espacio11"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+                <CheckBox
+                    android:id="@+id/checkboxa3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/checkbox"
+                    android:text="@string/checka3" />
+                <Space
+                    android:id="@+id/espacio12"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+                <CheckBox
+                    android:id="@+id/checkboxa4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/checkbox"
+                    android:text="@string/checka4" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layouttipo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/checkboxb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/checkbox"
+                    android:text="@string/checkb1" />
+                <Space
+                    android:id="@+id/espacio30"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:textSize="8sp"
+                    android:layout_weight="1" />
+                <CheckBox
+                    android:id="@+id/checkboxb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/checkbox"
+                    android:text="@string/checkb2" />
+                <Space
+                    android:id="@+id/espacio31"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:textSize="8sp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/checkboxb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/checkbox"
+                    android:text="@string/checkb3" />
+                <Space
+                    android:id="@+id/espacio32"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:textSize="8sp"
+                    android:layout_weight="1" />
+                <CheckBox
+                    android:id="@+id/checkboxb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/checkbox"
+                    android:text="@string/checkb4" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutsiguiente"
+            android:background="@color/colorlayoutsecundariab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/resultados"
+                android:background="@color/colorbotones"
+                android:textColor="@color/colortextobotones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnresultado"
+                android:textAlignment="textStart"
+                android:textIsSelectable="false"
+                android:gravity="center_horizontal"
+                tools:layout_editor_absoluteX="68dp"
+                tools:layout_editor_absoluteY="394dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutdebug"
+            android:background="@color/colorlayoutsecundaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/debug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txttipojuego" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d1d1d1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layoutcabecera"
+        android:background="@color/colorlayoutprincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/info_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listado de juegos"
+            android:textColor="#ea040b"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listview_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="#d1d1d1"
+        android:dividerHeight="10dp"></ListView>
+
+
+
+
+
+</LinearLayout>

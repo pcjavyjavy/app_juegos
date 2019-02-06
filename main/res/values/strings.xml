@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Juegos</string>
+    <string name="txtnumjug">Numero de jugadores</string>
+    <string name="txtnumtiempo">Tiempo de partida</string>
+    <string name="txttipojuego">Tipo de juego</string>
+    <string name="radtiempmax">Maximo</string>
+    <string name="radtiempmin">Minimo</string>
+    <string name="radtiempexaco">Exacto</string>
+    <string name="radjugoptimo">Optimo</string>
+    <string name="radjugnooptimo">Excl. optimo</string>
+    <string name="radjugcualq">Cualquiera</string>
+    <string name="radtipotodos">Todos</string>
+    <string name="radtipoalguno">Alguno</string>
+    <string name="radtiponinguno">Ninguno</string>
+    <string name="checka1">Rol</string>
+    <string name="checka2">Tablero</string>
+    <string name="checka3">Cartas</string>
+    <string name="checka4">Roles ocultos</string>
+    <string name="checkb1">Investigacion</string>
+    <string name="checkb2">Party</string>
+    <string name="checkb3">Cooperativo</string>
+    <string name="checkb4">Todos contra uno</string>
+    <string name="btnresultado">Resultados</string>
+    <string name="franja0tiempo">Menos de 15m</string>
+    <string name="franja1tiempo">De 15 a 30</string>
+    <string name="franja2tiempo">De 30 a 45</string>
+    <string name="franja3tiempo">De 45 a 1h</string>
+    <string name="franja4tiempo">De 1h a 1:30h</string>
+    <string name="franja5tiempo">De 1:30h a 2h</string>
+    <string name="franja6tiempo">De 2h a 2:30h</string>
+    <string name="franja7tiempo">De 2:30h a 3h</string>
+    <string name="franja8tiempo">De 3h a 4h</string>
+    <string name="franja9tiempo">Mas de 4h</string>
+    <string name="franja0minutosup">15</string>
+    <string name="franja1minutosup">30</string>
+    <string name="franja2minutosup">45</string>
+    <string name="franja3minutosup">60</string>
+    <string name="franja4minutosup">90</string>
+    <string name="franja5minutosup">120</string>
+    <string name="franja6minutosup">150</string>
+    <string name="franja7minutosup">180</string>
+    <string name="franja8minutosup">240</string>
+    <string name="franja9minutosup">10000</string>
+    <string name="franja0minutosdw">0</string>
+    <string name="franja1minutosdw">15</string>
+    <string name="franja2minutosdw">30</string>
+    <string name="franja3minutosdw">45</string>
+    <string name="franja4minutosdw">60</string>
+    <string name="franja5minutosdw">90</string>
+    <string name="franja6minutosdw">120</string>
+    <string name="franja7minutosdw">150</string>
+    <string name="franja8minutosdw">180</string>
+    <string name="franja9minutosdw">241</string>
+    <string-array name="arraynumerojugadores">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="arraytiempos">
+        <item>@string/franja0tiempo</item>
+        <item>@string/franja1tiempo</item>
+        <item>@string/franja2tiempo</item>
+        <item>@string/franja3tiempo</item>
+        <item>@string/franja4tiempo</item>
+        <item>@string/franja5tiempo</item>
+        <item>@string/franja6tiempo</item>
+        <item>@string/franja7tiempo</item>
+        <item>@string/franja8tiempo</item>
+        <item>@string/franja9tiempo</item>
+    </string-array>
+    <string-array name="arrayminutosup">
+        <item>@string/franja0minutosup</item>
+        <item>@string/franja1minutosup</item>
+        <item>@string/franja2minutosup</item>
+        <item>@string/franja3minutosup</item>
+        <item>@string/franja4minutosup</item>
+        <item>@string/franja5minutosup</item>
+        <item>@string/franja6minutosup</item>
+        <item>@string/franja7minutosup</item>
+        <item>@string/franja8minutosup</item>
+        <item>@string/franja9minutosup</item>
+    </string-array>
+    <string-array name="arrayminutosdw">
+        <item>@string/franja0minutosdw</item>
+        <item>@string/franja1minutosdw</item>
+        <item>@string/franja2minutosdw</item>
+        <item>@string/franja3minutosdw</item>
+        <item>@string/franja4minutosdw</item>
+        <item>@string/franja5minutosdw</item>
+        <item>@string/franja6minutosdw</item>
+        <item>@string/franja7minutosdw</item>
+        <item>@string/franja8minutosdw</item>
+        <item>@string/franja9minutosdw</item>
+    </string-array>
+
+</resources>
